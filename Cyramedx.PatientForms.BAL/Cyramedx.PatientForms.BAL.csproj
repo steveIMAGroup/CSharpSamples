@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99618B15-9E7C-4AE1-A024-827CDF3A4EEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cyramedx.PatientForms.BAL</RootNamespace>
+    <AssemblyName>Cyramedx.PatientForms.BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BALAllegationHx.cs" />
+    <Compile Include="BALAllSystem.cs" />
+    <Compile Include="BALAllsystemformsforMoonlight.cs" />
+    <Compile Include="BALAnci.cs" />
+    <Compile Include="BALCardiovascular.cs" />
+    <Compile Include="BALCommon.cs" />
+    <Compile Include="BALFunction.cs" />
+    <Compile Include="BALHxOfDigestive.cs" />
+    <Compile Include="BALHxofMental.cs" />
+    <Compile Include="BALHxOfPulmonary.cs" />
+    <Compile Include="BALIandC.cs" />
+    <Compile Include="BALImpressionHx.cs" />
+    <Compile Include="BALMAForm.cs" />
+    <Compile Include="BALMusculo.cs" />
+    <Compile Include="BALPastMedicalHistory.cs" />
+    <Compile Include="BALPEBreastLungs.cs" />
+    <Compile Include="BALPEBriefMentalStatusScreening.cs" />
+    <Compile Include="BALPEGrip.cs" />
+    <Compile Include="BALPEHearing.cs" />
+    <Compile Include="BALPEHEENT.cs" />
+    <Compile Include="BALPENeuroLogic.cs.cs" />
+    <Compile Include="BALPENeurologicGrip.cs" />
+    <Compile Include="BALPESpine.cs" />
+    <Compile Include="BALPEVital.cs" />
+    <Compile Include="BALProgressNote.cs" />
+    <Compile Include="BALROMFinger.cs" />
+    <Compile Include="BALROMforMedplus.cs" />
+    <Compile Include="BALROMHx.cs" />
+    <Compile Include="BALROS.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cyramedx.PatientForms.DAL\Cyramedx.PatientForms.DAL.csproj">
+      <Project>{28C33272-22A9-4400-9CF2-FAB99D561EA9}</Project>
+      <Name>Cyramedx.PatientForms.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cyramedx.PatientForms.Entities\Cyramedx.PatientForms.Entities.csproj">
+      <Project>{819F9D73-26D4-4A31-9AE3-64C8FF1AFBA1}</Project>
+      <Name>Cyramedx.PatientForms.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
